@@ -1,3 +1,8 @@
+@font-face{
+  font-family: coolfont;
+  src: url("../font/coolvertica.ttf");
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -5,6 +10,9 @@
   list-style: none;
   text-align: center;
   color: black;
+}
+
+body{
   font-family: arial, sans-serif;
   font-size: 1em;
 }
@@ -12,11 +20,17 @@
 .container{
   max-width: 100vw;
   min-height: 100vh;
-  background-color: lightgrey;
+  background-color: darkgrey;
 }
 
 header{
+  height: 50px;
+  font-family: coolfont;
   background-color: white;
+}
+
+nav, ul{
+  height: 100%;
 }
 
 ul{
@@ -25,30 +39,70 @@ ul{
 }
 
 header a{
-  flex: 1;
+  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0.1%;
   padding: 10px 0;
-  border-style: solid;
-  border-width: 0 1px;
-  background-color: #BDF1FF;
-}
-
-header a:hover{
-  background-color: #A2EFFF;
 }
 
 header a:first-child{
-  margin-left: 25%;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 0 2px;
 }
+
+header a:fist-child{
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 0 2px;
+}
+
 header a:last-child{
-  margin-right: 25%;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 0 2px;
+}
+
+header a li{
+  transition-property: margin-bottom;
+  transition-duration: .5s;
+  margin-bottom: 0;
+}
+
+header a:hover li{
+  margin-bottom: -5%;
 }
 
 .main{
   height: 350px;
   margin-top: 1%;
   background-color: white;
+} 
+
+/*header, .main{
+  background-color: darkgrey;
+}
+*/
+header{
+  border-bottom: solid 2px lightblue;
+}
+
+.main{
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 2px 0;
+}
+
+.transition{
+  transtion-property: background-color;
+  transition-duration: .5s;
+}
+
+.activatelink{
+  background-color: lightgrey;
+}
+
+.bazarlink{
+  color: white;
 }
