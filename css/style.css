@@ -13,7 +13,7 @@
 }
 
 body{
-  font-family: arial, sans-serif;
+  font-family: coolfont;
   font-size: 1em;
 }
 
@@ -24,9 +24,10 @@ body{
 }
 
 header{
-  height: 50px;
+  height: 40px;
   font-family: coolfont;
   background-color: white;
+  border-bottom: solid 2px lightblue;
 }
 
 nav, ul{
@@ -65,8 +66,6 @@ header a:last-child{
 }
 
 header a li{
-  transition-property: margin-bottom;
-  transition-duration: .5s;
   margin-bottom: 0;
 }
 
@@ -75,27 +74,12 @@ header a:hover li{
 }
 
 .main{
-  height: 350px;
-  margin-top: 1%;
-  background-color: white;
-} 
-
-/*header, .main{
-  background-color: darkgrey;
-}
-*/
-header{
-  border-bottom: solid 2px lightblue;
-}
-
-.main{
-  border-style: solid;
-  border-color: lightblue;
-  border-width: 2px 0;
+  height: 600px;
+  margin-top: 2%;
 }
 
 .transition{
-  transtion-property: background-color;
+  transition-property: background-color margin-bottom;
   transition-duration: .5s;
 }
 
@@ -105,4 +89,59 @@ header{
 
 .bazarlink{
   color: white;
+}
+
+.contactzone{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.contactarea{
+  height: 50%;
+  width: 80px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px 0 0 2px;
+  border-color: lightblue;
+  font-size: .7em;
+  transition-property: width height font-size;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.contactarea:hover{
+  height: 75%;
+  width: 140px;
+  font-size: 1em;
+}
+
+.bigpicture{
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border: solid 2px lightblue;
+}
+
+.littlemain{
+  height: 80px;
+}
+
+.linkcontainer{
+  height: 100%;
+  width: 20%;
+  margin: .2% auto;
+  background-color: white;
+  border-style: solid;
+  border-width: 0 2px 2px 2px;
+  border-color: lightblue;
+  cursor: pointer;
 }
