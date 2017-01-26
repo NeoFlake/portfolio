@@ -1,3 +1,8 @@
+@font-face{
+  font-family: coolfont;
+  src: url("../font/coolvertica.ttf");
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -5,18 +10,28 @@
   list-style: none;
   text-align: center;
   color: black;
-  font-family: arial, sans-serif;
+}
+
+body{
+  font-family: coolfont;
   font-size: 1em;
 }
 
 .container{
   max-width: 100vw;
   min-height: 100vh;
-  background-color: lightgrey;
+  background-color: darkgrey;
 }
 
 header{
+  height: 40px;
+  font-family: coolfont;
   background-color: white;
+  border-bottom: solid 2px lightblue;
+}
+
+nav, ul{
+  height: 100%;
 }
 
 ul{
@@ -25,30 +40,108 @@ ul{
 }
 
 header a{
-  flex: 1;
+  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0.1%;
   padding: 10px 0;
-  border-style: solid;
-  border-width: 0 1px;
-  background-color: #BDF1FF;
-}
-
-header a:hover{
-  background-color: #A2EFFF;
 }
 
 header a:first-child{
-  margin-left: 25%;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 0 2px;
 }
+
+header a:fist-child{
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 0 2px;
+}
+
 header a:last-child{
-  margin-right: 25%;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 0 2px;
+}
+
+header a li{
+  margin-bottom: 0;
+}
+
+header a:hover li{
+  margin-bottom: -5%;
 }
 
 .main{
-  height: 350px;
-  margin-top: 1%;
+  height: 600px;
+  margin-top: 2%;
+}
+
+.transition{
+  transition-property: background-color margin-bottom;
+  transition-duration: .5s;
+}
+
+.activatelink{
+  background-color: lightgrey;
+}
+
+.bazarlink{
+  color: white;
+}
+
+.contactzone{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.contactarea{
+  height: 50%;
+  width: 80px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
   background-color: white;
+  border-style: solid;
+  border-width: 2px 0 0 2px;
+  border-color: lightblue;
+  font-size: .7em;
+  transition-property: width height font-size;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.contactarea:hover{
+  height: 75%;
+  width: 140px;
+  font-size: 1em;
+}
+
+.bigpicture{
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border: solid 2px lightblue;
+}
+
+.littlemain{
+  height: 80px;
+}
+
+.linkcontainer{
+  height: 100%;
+  width: 20%;
+  margin: .2% auto;
+  background-color: white;
+  border-style: solid;
+  border-width: 0 2px 2px 2px;
+  border-color: lightblue;
+  cursor: pointer;
 }
