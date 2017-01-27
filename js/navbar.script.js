@@ -2,6 +2,7 @@ $().ready(function(){
 
 	$("#navbutton").click(function(){
 		$(".headtransition").toggleClass("togglebar");
+		$(".buttonav").toggleClass("switchicon");
 	});
 
 	$("#firstNavButton").click(function(){

@@ -43,13 +43,16 @@ body{
 
 .buttonav{
   height: 100%;
-  width: 55px;
-  background-image: url("../img/iconburger.png");
+  width: 50px;
+  background-image: url("../img/iconburger4.png");
   background-size: 100% 100%;
-  border-style: solid;
-  border-color: lightblue;
-  border-width: 0 0 2px 2px;
+  transition-property: background-image;
+  transition-duration: 1s;
   cursor: pointer;
+}
+
+.switchicon{
+  background-image: url("../img/iconburger3.png");
 }
 
 .citationarea p{
@@ -58,14 +61,14 @@ body{
 }
 
 .citationarea p span{
-  color: black;
+  color: white;
   letter-spacing: 0.1em;
 }
 
 .citationarea b{
   font-weight: 600;
   font-size: 1.5em;
-  color: darkblue;
+  color: lightgreen;
 }
 
 .empty{
@@ -127,8 +130,16 @@ header a:hover li{
   margin-bottom: -3%;
 }
 
+.citationarea em{
+
+  font-weight: 800;
+  font-style: italic;
+  color: darkred;
+}
+
 .main{
   height: 600px;
+  margin-top: 4%;
 }
 
 .transition{
@@ -165,7 +176,7 @@ header a:hover li{
   border-color: white;
   font-size: .7em;
   border-top-left-radius: 10px;
-  transition-property: width height font-size background-color border-color;
+  transition-property: background-color border-color;
   transition-duration: 1s;
   cursor: pointer;
 }
@@ -177,9 +188,6 @@ header a:hover li{
 }
 
 .contactarea:hover{
-  height: 75%;
-  width: 140px;
-  font-size: 1em;
   background-color: white;
   border-color: lightblue;
 }
