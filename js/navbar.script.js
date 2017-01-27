@@ -1,5 +1,9 @@
 $().ready(function(){
 
+	$("#navbutton").click(function(){
+		$(".headtransition").toggleClass("togglebar");
+	});
+
 	$("#firstNavButton").click(function(){
 			$("header a").removeClass("activatelink");
 			$("header a li").removeClass("bazarlink");
