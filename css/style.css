@@ -170,12 +170,22 @@ header a:hover li{
   cursor: pointer;
 }
 
+.contactarea a p{
+  color: white;
+  transition-property: color;
+  transition-duration: 1s;
+}
+
 .contactarea:hover{
   height: 75%;
   width: 140px;
   font-size: 1em;
   background-color: white;
   border-color: lightblue;
+}
+
+.contactarea:hover a p{
+  color: black;
 }
 
 .bigpicture{
