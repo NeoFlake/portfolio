@@ -155,3 +155,28 @@ header a:hover li{
 .contactarea:hover a p{
   color: #66CC66;
 }
+
+/* Barre de Scrolling */
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgreen;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/* Fond d'atténuation */
+
+.bckfilter{
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
