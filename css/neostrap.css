@@ -1,0 +1,41 @@
+@font-face{
+	font-family: coolfont;
+	src: url("../font/coolvertica.ttf");
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+}
+
+.flexybox{
+	display: flex;
+}
+
+.centerColumn{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.FSbackground{
+	background-size: 100% 100%;
+}
+
+.transitionAll{
+	transition-property: all;
+}
+
+.transition1s{
+	transition-duration: 1s;
+}
+
+.transitionHalfs{
+	transition-duration: .5s;
+}
+
+.pointer{
+	cursor: pointer;
+}
