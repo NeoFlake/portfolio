@@ -1,3 +1,23 @@
+@-webkit-keyframes animationduturfu {
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes animationduturfu {
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
 *{
 	color: white;
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
@@ -23,7 +43,6 @@
 .mainSection{
 	height: 60%;
 	width: 100%;
-	margin-bottom: 7%;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
@@ -84,26 +103,6 @@
 
 .linkIcon:hover{
 	-webkit-animation: animationduturfu 1s;
-}
-
-@-webkit-keyframes animationduturfu {
-	0%{
-		transform: rotate(0deg);
-	}
-
-	100%{
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes animationduturfu {
-	0%{
-		transform: rotate(0deg);
-	}
-
-	100%{
-		transform: rotate(360deg);
-	}
 }
 
 .linkAddress{

@@ -164,13 +164,13 @@ header a:hover li{
 }
  
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
+    background-color: black;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
  
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: darkgreen;
+    background: repeating-linear-gradient( to bottom, #66CC66, darkblue);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
