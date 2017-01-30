@@ -14,6 +14,10 @@ body{
   background-image: url(../img/fondtest.jpg);
 }
 
+.mergeZone{
+  /*Permet de créer la branche*/
+}
+
 .citationarea em{
 
   font-weight: 800;
