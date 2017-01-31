@@ -64,7 +64,7 @@ h1{
 
 .langageZone{
 	justify-content: center;
-	margin-bottom: 1%;	
+	margin-bottom: 1%;
 }
 
 .langageSize{
@@ -91,7 +91,7 @@ h1{
 }
 
 .langageIcon{
-	width: 100px;	
+	width: 100px;
 }
 
 #htmlicon{
@@ -133,7 +133,7 @@ h1{
 	align-items: center;
 }
 
-.progress-bar { 
+.progress-bar {
     width: 500px;
     height: 36px;
     padding: 6px;
@@ -146,11 +146,11 @@ h1{
     -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
 }
 
-.progress-bar:before { 
+.progress-bar:before {
     content: '';
     display: block;
     position: absolute;
-    
+
     height: 36px;
     background: #999;
     border-radius: 18px;
@@ -161,7 +161,7 @@ h1{
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
 }
 
-.progress-bar:after { 
+.progress-bar:after {
     content: '|||||||||||||||||';
     display: block;
     position: absolute;
@@ -205,25 +205,25 @@ h1{
 	width: 115px;
 }
 
-.htmlcolor:before { 
+.htmlcolor:before {
   background: #F16529;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F16529), to(#E44D26));
   background: -moz-linear-gradient(top, #F16529, #E44D26);
 }
 
-.csscolor:before { 
+.csscolor:before {
   background: #2986E5;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2986E5), to(#2066AE));
   background: -moz-linear-gradient(top, #2986E5, #2066AE);
 }
 
-.jscolor:before { 
+.jscolor:before {
   background: #F0DB4F;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F0DB4F), to(#323330));
   background: -moz-linear-gradient(top, #F0DB4F, #323330);
 }
 
-.phpcolor:before { 
+.phpcolor:before {
   background: #7A8ECB;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7A8ECB), to(#526191));
   background: -moz-linear-gradient(top, #7A8ECB, #526191);
@@ -319,96 +319,157 @@ h1{
 	width: 40px;
 }
 
-.querycolor:before { 
+.querycolor:before {
   background: #193556;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#193556), to(#172C45));
   background: -moz-linear-gradient(top, #193556, #172C45);
 }
 
-.angularcolor:before { 
+.angularcolor:before {
   background: #DD1B16;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DD1B16), to(#A6120D));
   background: -moz-linear-gradient(top, #DD1B16, #A6120D);
 }
 
-.bootstrapcolor:before { 
+.bootstrapcolor:before {
   background: #58294B;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#58294B), to(#210F3A));
   background: -moz-linear-gradient(top, #58294B, #210F3A);
 }
 
-.nodecolor:before { 
+.nodecolor:before {
   background: #90C53F;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#90C53F), to(#46483D));
   background: -moz-linear-gradient(top, #90C53F, #46483D);
 }
 
-.otherXpArea{
-	height: 372px;
-}
-
-.marginTopSpace{
-	margin-top: 200px;
-}
-
-.otherXpTitle{
-	height: 100px;
+.bottomPageArea{
 	width: 100%;
+	height: 300px;
+	margin-top: 4%;
+}
+
+.bottomPageTitle{
+	height: 100px;
+	background-color: white;
 	border: solid #66CC66;
 	border-width: 2px 0;
-	background-color: white;
 }
 
-.xpContainer{
-	height: 100px;
-	width: 100%;
-	justify-content: space-around;
-	align-items: flex-end;
-	margin-top: 5%;
-	background-color: white;
-	border-top: solid 2px #66CC66;
-}
-
-.columnUp{
-	height: 80px;
-	width: 30%;
-	border: solid 2px #66CC66;
-	text-align: center;
-}
-
-.columnUp h3{
+.bottomPageTitle h3{
 	color: black;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	text-shadow: #66CC66 1px 1px, #66CC66 -1px 1px, #66CC66 -1px -1px, #66CC66 1px -1px;
-	cursor: default;
 }
 
-#thirdbckimg{
-	background-image: url(../img/whoami3.jpg);
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.buttonContainer{
+	height: 150px;
+	width: 20%;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
 }
 
-.xpArea{
-	height: 600px;
-	margin-top: 6px;
-	justify-content: space-around;
-	align-items: flex-start;
+.buttonContainer a{
+	height: 75px;
+	width: 75%;
+}
+
+.buttonArea{
+	height: 100%;
+	width: 100%;
+	border: solid 4px white;
+	border-radius: 30px;
+	font-size: 1.25em;
+}
+
+.buttonArea:hover{
+	border-color: #66CC66;
 	background-color: white;
-	border-bottom: solid 2px #66CC66;
 }
 
-.columnDown{
-	height: 580px;
-	width: 30%;
+.buttonArea:hover h4{
 	color: black;
-	border: solid #66CC66;
-	border-width: 0 2px 2px 2px;
+	text-shadow: #66CC66 1px 1px, #66CC66 -1px 1px, #66CC66 -1px -1px, #66CC66 1px -1px;
+}
+
+.buttonDLform{
+	color: black;
+	text-shadow: #66CC66 1px 1px, #66CC66 -1px 1px, #66CC66 -1px -1px, #66CC66 1px -1px;
 }
 
 .bckfilter{
-  height: 100vh;
+	height: 900px;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1400px){
+	.progress-bar{
+		width: 300px;
+	}
+
+	.htmlBarDim:before, .cssBarDim:before{
+		width: 285px;
+	}
+
+	.htmlBarDim:after, .cssBarDim:after{
+		width: 275px;
+	}
+
+	.jsBarDim:before{
+		width: 240px;
+	}
+
+	.jsBarDim:after{
+		width: 230px;
+	}
+
+	.phpBarDim:before{
+		width: 75px;
+	}
+
+	.phpBarDim:after{
+		width: 65px;
+	}
+
+	.queryBarDim:before, .bootstrapBarDim:before{
+		width: 150px;
+	}
+
+	.queryBarDim:after, .bootstrapBarDim:after{
+		width: 140px;
+	}
+
+	.angularBarDim:before{
+		width: 90px;
+	}
+
+	.angularBarDim:after{
+		width: 80px;
+	}
+
+	.nodeBarDim:before{
+		width: 30px;
+	}
+
+	.nodeBarDim:after{
+		width: 20px;
+	}
+
+}
+
+@media (max-width: 992px){
+
+	.langageName{
+		margin-right: 6%;
+	}
+
+	.progBar{
+			width: 50%;
+			margin-left: -1%;
+	}
+
+	.percentZone{
+		display: none;
+	}
 }
