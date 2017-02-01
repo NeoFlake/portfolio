@@ -19,6 +19,7 @@
 *{
 	color: white;
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+	font-family: coolfont;
 }
 
 h1{
@@ -358,7 +359,7 @@ h1{
 
 .bottomPageTitle h3{
 	color: black;
-	font-size: 1.5em;
+	font-size: 1.75em;
 	text-shadow: #66CC66 1px 1px, #66CC66 -1px 1px, #66CC66 -1px -1px, #66CC66 1px -1px;
 }
 
