@@ -1,10 +1,225 @@
-*{
-	color: white;
+@keyframes openTitle {
+		0%{
+			top: 75%;
+			left: -100%;
+			border-width: 2px 0 2px 0;
+			background-color: rgba(255,255,255,0.5);
+		}
+		1%{
+			top: 75%;
+			left: 0;
+			border-width: 2px 0 2px 0;
+			background-color: rgba(255,255,255,0.5);
+		}
+		2%{
+			top: 75%;
+			left: 0;
+			border-width: 2px 0 2px 0;
+			background-color: white;
+		}
+		3%{
+			top: 0;
+			left: 0;
+			border-width: 0 0 2px 0;
+			background-color: white;
+		}
+		4%{
+			top: 0;
+			left: 0;
+			border-width: 0 0 2px 0;
+			background-color: white;
+		}
+		100%{
+			top: 0;
+			left: 0;
+			border-width: 0 0 2px 0;
+			background-color: white;
+		}
 }
 
+@-webkit-keyframes openTitle {
+	0%{
+		top: 40%;
+		left: -100%;
+		border-width: 2px 0 2px 0;
+		background-color: rgba(255,255,255,0.5);
+	}
+	1%{
+		top: 40%;
+		left: 0;
+		border-width: 2px 0 2px 0;
+		background-color: rgba(255,255,255,0.5);
+	}
+	2%{
+		top: 40%;
+		left: 0;
+		border-width: 2px 0 2px 0;
+		background-color: white;
+	}
+	3%{
+		top: 0;
+		left: 0;
+		border-width: 0 0 2px 0;
+		background-color: white;
+	}
+	4%{
+		top: 0;
+		left: 0;
+		border-width: 0 0 2px 0;
+		background-color: white;
+	}
+	100%{
+		top: 0;
+		left: 0;
+		border-width: 0 0 2px 0;
+		background-color: white;
+	}
+}
+
+@keyframes openMenu {
+		0%{
+			top: 100%;
+			background-color: rgba(255,255,255,0.5);
+		}
+		2%{
+			top: 100%;
+			background-color: rgba(255,255,255,0.5);
+		}
+		3%{
+			top: 25%;
+			background-color: rgba(255,255,255,0.5);
+		}
+		4%{
+			top: 25%;
+		}
+		100%{
+			top: 25%;
+		}
+}
+
+@-webkit-keyframes openMenu {
+		0%{
+			top: 100%;
+			background-color: rgba(255,255,255,0.5);
+		}
+		4%{
+			top: 100%;
+			background-color: rgba(255,255,255,0.5);
+		}
+		5%{
+			top: 25%;
+			background-color: rgba(255,255,255,0.5);
+		}
+		6%{
+			top: 25%;
+		}
+		100%{
+			top: 25%;
+		}
+}
+
+*{
+	color: white;
+	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+	font-family: coolfont;
+}
 
 .container{
-  max-width: 100vw;
-  min-height: 100vh;
-  background-image: url(../img/fondtest.jpg);
+	height: 750px;
+  background-image: url(../img/porfolio.jpg);
+}
+
+.mainTitle{
+	height: 90px;
+	width: 100%;
+	margin-top: 2%;
+}
+
+.mainTitle h1{
+	cursor: default;
+}
+
+.portRow{
+	height: 230px;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.lMarginTop{
+	margin-top: 2%;
+}
+
+.projectArea{
+	height:90%;
+	width: 25%;
+	position: relative;
+	border: solid 2px #66CC66;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.areaDimension{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition-property: all;
+	transition-duration: 2s;
+	z-index: 1;
+}
+
+#projet1{
+	background-image: url("../img/whoami2.jpg");
+}
+
+.projectArea:hover .areaDimension{
+	transform: scale(1.1);
+}
+
+.projectArea:hover .animArea{
+	animation: openMenu 50s;
+	-webkit-animation: openMenu 50s;
+}
+
+.animArea{
+	height: 75%;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 100%;
+	left: 0;
+	border-top: solid 2px #66CC66;
+	transition-property: all;
+	transition-duration: 2s;
+	z-index: 3;
+}
+
+.titleAnimArea{
+	height: 25%;
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: -100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid #66CC66;
+	border-width: 2px 0;
+	background-color: rgba(50,50,255,0.3);
+	z-index: 3;
+}
+
+h4{
+	font-size: 1.5em;
+	color: black;
+	text-shadow: #66CC66 1px 1px, #66CC66 -1px 1px, #66CC66 -1px -1px, #66CC66 1px -1px;
+}
+
+.projectArea:hover .titleAnimArea{
+	animation: openTitle 50s;
+	-webkit-animation: openTitle 50s;
 }
