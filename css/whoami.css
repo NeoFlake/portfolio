@@ -52,9 +52,11 @@ h1{
 }
 
 .langageTitle{
+	width: 40%;
+	margin: 0 auto;
 	background-color: white;
-	border: solid #66CC66;
-	border-width: 2px 0;
+	border: solid 2px #66CC66;
+	border-radius: 8px;
 }
 
 .langageCompArea h2, .frameworkTitle h2, .otherXpTitle h2{
@@ -242,9 +244,16 @@ h1{
 
 .frameworkTitle{
 	height: 100px;
+	background-color: black;
+}
+
+.frameworkTitleContainer{
+	height: 100%;
+	width: 40%;
+	margin: 0 auto;
 	background-color: white;
-	border: solid #66CC66;
-	border-width: 2px 0;
+	border: solid 2px #66CC66;
+	border-radius: 8px;
 }
 
 #secondbckimg{
@@ -352,9 +361,11 @@ h1{
 
 .bottomPageTitle{
 	height: 100px;
+	width: 40%;
+	margin: 0 auto;
 	background-color: white;
-	border: solid #66CC66;
-	border-width: 2px 0;
+	border: solid 2px #66CC66;
+	border-radius: 8px;
 }
 
 .bottomPageTitle h3{

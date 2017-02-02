@@ -125,7 +125,7 @@
 }
 
 .container{
-	height: 750px;
+	height: 780px;
   background-image: url(../img/porfolio.jpg);
 }
 
@@ -171,7 +171,27 @@
 }
 
 #projet1{
-	background-image: url("../img/whoami2.jpg");
+	background-image: url("../img/archi.jpg");
+}
+
+#projet2{
+	background-image: url("../img/trombi.jpg");
+}
+
+#projet3{
+	background-image: url("../img/unbirthday.jpg");
+}
+
+#projet4{
+	background-image: url("../img/sis.png");
+}
+
+#projet5{
+	background-image: url("../img/uppertails.jpg");
+}
+
+#projet6{
+	background-image: url("../img/porfolioFront.jpg");
 }
 
 .projectArea:hover .areaDimension{
@@ -196,6 +216,11 @@
 	transition-property: all;
 	transition-duration: 2s;
 	z-index: 3;
+}
+
+.animArea span{
+	color: black;
+	text-shadow: #66CC66 1px 1px, #66CC66 -1px 1px, #66CC66 -1px -1px, #66CC66 1px -1px;
 }
 
 .titleAnimArea{
