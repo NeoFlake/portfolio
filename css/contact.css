@@ -25,12 +25,13 @@
 
 .container{
   max-width: 100vw;
-  min-height: 100vh;
+	height: 100%;
   background-image: url(../img/contactbckground.jpg);
 }
 
 .main{
-	height: 900px;
+	height: 680px;
+	margin-top: -5%;
 	font-family: coolfont;
 }
 
@@ -72,7 +73,7 @@
 }
 
 .linkIcon{
-	width: 54px;
+	width: 42px;
 	border-radius: 50%;
 	margin: 0 1%;
 	cursor: pointer;
